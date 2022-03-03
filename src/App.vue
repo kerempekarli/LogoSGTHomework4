@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <div>
+        <div id="page-top">
+
+        <WrapperComponent/>
+
+        <ScrollComponent/>
+
+        <LogoutComponent/>
+
+
+        </div>
+    </div>
+
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    import ScrollComponent from "./Components/ScrollComponent.vue"
+    import WrapperComponent from "./Components/WrapperComponent.vue" 
+    import LogoutComponent from "./Components/LogoutComponent.vue"
+    export default {
+        components :{
+            ScrollComponent,
+            WrapperComponent,
+            LogoutComponent
+        }
+    }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
